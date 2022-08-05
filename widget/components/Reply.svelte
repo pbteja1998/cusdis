@@ -67,7 +67,7 @@
       <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
     </svg>
   </span>
-  <form class="ml-4 flex-1 space-y-4">
+  <div class="ml-4 flex-1 space-y-4">
     <div class="flex space-x-2">
       <div class="flex-1">
         <div class="flex justify-between">
@@ -126,12 +126,12 @@
       <button 
         class="inline-flex items-center rounded-lg border border-transparent bg-gray-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2" 
         class:cusdis-disabled={loading}
-        on:click={addComment}
+        on:click={addComment}        
       >
         {loading ? t('sending') : t('post_comment')}
       </button>
     </div>
-  </form>
+  </div>
 </div>
 
 <div class="grid grid-cols-1 gap-4">
