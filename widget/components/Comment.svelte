@@ -1,5 +1,6 @@
 <script>
   import { getContext } from 'svelte'
+  import { formatDate } from '../format-date'
   import { t } from '../i18n'
 
   import Reply from './Reply.svelte'
@@ -35,7 +36,7 @@
           </span>
         </div>
         <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 mt-0">
-          {comment.parsedCreatedAt}
+          {formatDate(comment.parsedCreatedAt)}
         </p>
         {#if comment.moderatorId}
           <span class="inline-flex items-center rounded bg-gray-100 px-2 py-0.5 text-xs font-semibold uppercase tracking-wider text-gray-800">
