@@ -11,7 +11,7 @@ export default {
   sending: 'sending...',
 
   // reply
-  mod_badge: 'MOD',
+  mod_badge: 'AUTHOR',
   content_is_required: 'Content is required',
   nickname_is_required: 'Nickname is required',
 

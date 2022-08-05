@@ -11,7 +11,7 @@ window.CUSDIS_LOCALE = {
   sending: '전송중...',
 
   // reply
-  mod_badge: 'MOD',
+  mod_badge: 'AUTHOR',
   content_is_required: '내용이 필요합니다',
   nickname_is_required: '닉네임이 필요합니다',
 

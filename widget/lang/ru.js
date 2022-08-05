@@ -11,7 +11,7 @@ window.CUSDIS_LOCALE = {
   sending: 'Отправляется...',
 
   // reply
-  mod_badge: 'MOD',
+  mod_badge: 'AUTHOR',
   content_is_required: 'Заполните текст комментария',
   nickname_is_required: 'Заполните имя',
 

@@ -11,7 +11,7 @@ window.CUSDIS_LOCALE = {
   sending: '送信中...',
 
   // reply
-  mod_badge: 'MOD',
+  mod_badge: 'AUTHOR',
   content_is_required: 'コメントを入力してください',
   nickname_is_required: '名前を入力してください',
 

@@ -11,7 +11,7 @@ window.CUSDIS_LOCALE = {
     sending: '... جارى الارسال',
   
     // reply
-    mod_badge: 'MOD',
+    mod_badge: 'AUTHOR',
     content_is_required: 'المحتوى مطلوب',
     nickname_is_required: 'الأسم مطلوب',
   

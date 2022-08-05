@@ -11,7 +11,7 @@ window.CUSDIS_LOCALE = {
   sending: 'enviando...',
 
   // reply
-  mod_badge: 'MOD',
+  mod_badge: 'AUTHOR',
   content_is_required: 'Conteúdo é requerido',
   nickname_is_required: 'Apelido é requerido',
 

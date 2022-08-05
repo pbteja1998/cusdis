@@ -11,7 +11,7 @@ window.CUSDIS_LOCALE = {
   sending: 'lähettää...',
 
   // reply
-  mod_badge: 'MOD',
+  mod_badge: 'AUTHOR',
   content_is_required: 'Sisältö on pakollinen',
   nickname_is_required: 'Nimi on pakollinen',
 
