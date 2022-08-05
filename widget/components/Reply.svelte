@@ -57,6 +57,83 @@
 
 </script>
 
+<div class="flex items-start">
+  <span class="inline-block h-12 w-12 overflow-hidden rounded-full bg-gray-100">
+    <svg
+      class="h-full w-full text-gray-300"
+      fill="currentColor"
+      view-box="0 0 24 24"
+    >
+      <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+    </svg>
+  </span>
+  <form class="ml-4 flex-1 space-y-4">
+    <div class="flex space-x-2">
+      <div class="flex-1">
+        <div class="flex justify-between">
+          <label for="nickname" class="text-sm font-semibold text-gray-700 after:ml-0.5 after:text-red-500 after:content-['*']">
+            {t('nickname')}
+          </label>
+        </div>
+        <div class="mt-2">
+          <input 
+            type="text" 
+            name="nickname"
+            class="block w-full rounded-lg px-4 py-3 font-medium shadow-sm border-gray-300 focus:border-gray-900 focus:ring-gray-900"
+            title={t('nickname')}
+            placeholder={t('nickname')}
+            bind:value={nickname}
+          />
+        </div>
+      </div>
+      <div class="flex-1">
+        <div class="flex justify-between">
+          <label for="email" class="text-sm font-semibold text-gray-700 after:ml-0.5 after:text-red-500 after:content-['*']">
+            {t('email')}
+          </label>
+        </div>
+        <div class="mt-2">
+          <input 
+            type="email" 
+            name="email"
+            class="block w-full rounded-lg px-4 py-3 font-medium shadow-sm border-gray-300 focus:border-gray-900 focus:ring-gray-900"
+            title={t('email')}
+            placeholder={t('email')}
+            bind:value={email}
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-between">
+        <label for="reply_content" class="text-sm font-semibold text-gray-700 after:ml-0.5 after:text-red-500 after:content-['*']">
+          {t('reply_placeholder')}
+        </label>
+      </div>
+      <div class="mt-2">
+        <textarea 
+          title={t('reply_placeholder')} 
+          placeholder={t('reply_placeholder')} 
+          name="reply_content" 
+          cols="30" 
+          rows="3" 
+          class="block w-full resize-y rounded-lg px-4 py-3 font-medium shadow-sm border-gray-300 focus:border-gray-900 focus:ring-gray-900 sm:text-sm" 
+          bind:value={content} 
+        />
+      </div>
+    </div>
+    <div class="mt-3">
+      <button 
+        class="inline-flex items-center rounded-lg border border-transparent bg-gray-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2" 
+        class:cusdis-disabled={loading}
+        on:click={addComment}
+      >
+        {loading ? t('sending') : t('post_comment')}
+      </button>
+    </div>
+  </form>
+</div>
+
 <div class="grid grid-cols-1 gap-4">
   <div class="grid grid-cols-2 gap-4">
     <div class="px-1">
