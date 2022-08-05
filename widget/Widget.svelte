@@ -105,9 +105,11 @@
           {t('loading')}...
         </div>
       {:else}
-        {#each commentsResult.data as comment (comment.id)}
-          <Comment {comment} firstFloor={true} />
-        {/each}
+        <div class="space-y-10">
+          {#each commentsResult.data as comment (comment.id)}
+            <Comment {comment} firstFloor={true} />
+          {/each}
+        </div>
         {#if commentsResult.pageCount > 1}
           <div>
             {#each Array(commentsResult.pageCount) as _, index}
