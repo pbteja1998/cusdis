@@ -10,7 +10,10 @@ module.exports = {
         extend: {
           outline: ['dark']
         }
-      }
+      },
+      plugins: [
+        require('@tailwindcss/forms')
+      ]
     },
     autoprefixer: {},
   },
