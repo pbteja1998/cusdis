@@ -117,7 +117,7 @@
           name="reply_content" 
           cols="30" 
           rows="3" 
-          class="block w-full resize-y rounded-lg px-4 py-3 font-medium shadow-sm border-gray-300 focus:border-gray-900 focus:ring-gray-900 sm:text-sm" 
+          class="block w-full resize-y rounded-lg px-4 py-3 font-medium shadow-sm border-gray-300 focus:border-gray-900 focus:ring-gray-900" 
           bind:value={content} 
         />
       </div>

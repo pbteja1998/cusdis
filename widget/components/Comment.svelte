@@ -19,7 +19,7 @@
   class:cusdis-indicator={showIndicator}
 >
     <div class="flex items-center justify-between">
-      <div class="sm:flex sm:items-center sm:space-x-3">
+      <div class="flex items-center space-x-3">
         <div class="flex items-center space-x-3">
           <span class="inline-block h-6 w-6 overflow-hidden rounded-full bg-gray-100">
             <svg
@@ -34,7 +34,7 @@
             </p>
           </span>
         </div>
-        <p class="mt-2 text-xs font-semibold uppercase tracking-widest text-gray-500 sm:mt-0">
+        <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 mt-0">
           {comment.parsedCreatedAt}
         </p>
         {#if comment.moderatorId}
@@ -74,7 +74,7 @@
     </div>
 </div>
 
-<div class="space-y-10 pl-6 md:pl-16">
+<div class="space-y-10 pl-16">
   {#if comment.replies.data.length > 0}
     {#each comment.replies.data as child (child.id)}
       <svelte:self isChild={true} comment={child} />
