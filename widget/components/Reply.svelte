@@ -134,6 +134,8 @@
   </div>
 </div>
 
+<!--
+
 <div class="grid grid-cols-1 gap-4">
   <div class="grid grid-cols-2 gap-4">
     <div class="px-1">
@@ -177,6 +179,8 @@
     >
   </div>
 </div>
+
+-->
 
 <style>
   /* textarea,
